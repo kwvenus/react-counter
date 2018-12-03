@@ -5,9 +5,10 @@ import './App.css';
 class App extends Component {
 
   handleClick = () => {
-    alert("now you know how to handle onclick event") 
+    alert("now you know how to handle onclick event")
+    this.setState({number: 1})
   }
-
+  state = {number: 0}
   render() {
     return (
       <div className="App">
@@ -15,7 +16,7 @@ class App extends Component {
             Hello world!
           </button>
           <span>
-            number: 0
+            number: {this.state.number}
           </span>
       </div>
     );
