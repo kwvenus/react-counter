@@ -4,7 +4,7 @@ class Number extends Component {
     render() {
         return(
             <span>
-            Number:
+                Number:
             </span>
         )
     }
