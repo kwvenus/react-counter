@@ -8,7 +8,7 @@ class App extends Component {
     alert("now you know how to handle onclick event")
     this.setState({number: 1})
   }
-  state = {number: 0}
+  state = {number: this.props.defaultNum}
   render() {
     return (
       <div className="App">
