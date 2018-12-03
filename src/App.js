@@ -5,8 +5,12 @@ import './App.css';
 class App extends Component {
 
   handleClick = () => {
-    alert("now you know how to handle onclick event")
-    this.setState({number: 1})
+    //alert("now you know how to handle onclick event")
+    this.setState(
+        {
+          number: (this.state.number + this.props.onClick)
+        }
+      )
   }
   state = {number: this.props.defaultNum}
   render() {

@@ -4,7 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App defaultNum={3}/>, document.getElementById('root'));
+function increaseBy2() {
+    return 2
+}
+
+ReactDOM.render(<App defaultNum={3} onClick={increaseBy2()} />, document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change
